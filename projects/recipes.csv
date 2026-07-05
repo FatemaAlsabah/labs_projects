@@ -1,0 +1,10 @@
+Name,Ingredients,Prep_time,Instructions,Difficulty,Category
+Salad,"lettuce, cucumber, tomato, fetta cheese",10,cut the vegetables and mix the ingredients together,Easy,Lunch
+cake,"egg, flour, sugar, milk, oil, syrup",75,mix the ingredients and bake in the oven,Medium,Dessert
+scrambled eggs,"eggs, pepper, salt, cheese, oil",15,"whisk the eggs and add the salt, pepper and cheese, put oil on the pan and cook the eggs",Easy,Breakfast
+steak,"steak, oil, salt, pepper, spices",90,spice the steak and cook with oil,Medium,Dinner
+machboos,"rice, chicken, oil, onions, spices",120,"spice the chicken, cook the onions, add the onions to the chicken and cook together, wash and cook the rice, cook the rice and the chicken together",Hard,Lunch
+pasta,"salt, cheese, milk",70,cook and mix,Medium,Lunch
+rice,"rice, water, salt, oil",20,"put the rice with the water on the oven ,
+after 10 min ,c  put some salt and oil",Easy,Lunch
+rice1,"rice, water, salt, oil",4,cook the rice,Easy,Lunch
