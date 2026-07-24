@@ -45,18 +45,27 @@ def skew_calc(df):
                 degree = "Highly Skewed"
 
             # Recommendations
-            if min_val < 0:
-                recommendation = "Yeo-Johnson"
-            elif min_val == 0:
-                if skew > 0 and abs_skew > 1.0:
-                    recommendation = "log(x+1)"
+            if skew > 0 and abs_skew > 1.0:
+                if min_val > 0:
+                    recommendation = "Box-Cox or Yeo-Johnson"
+                elif min_val == 0:
+                    recommendation = "log(x+1) or Yeo-Johnson"
                 else:
                     recommendation = "Yeo-Johnson"
-            else:
-                if skew > 0 and abs_skew > 1.0:
-                    recommendation = "Box-Cox or log(x)"
+
+            elif skew > 0 and 0.5 <= abs_skew <= 1.0:
+                if min_val > 0:
+                    recommendation = "log(x+1) or Yeo-Johnson"
+                elif min_val == 0:
+                    recommendation = "log(x+1) or Yeo-Johnson"
                 else:
-                    recommendation = "Box-Cox"
+                    recommendation = "Yeo-Johnson"
+
+            else:
+                if min_val > 0:
+                    recommendation = "Box-Cox or Yeo-Johnson"
+                else:
+                    recommendation = "Yeo-Johnson"
 
         results.append({
             'Feature': col,
